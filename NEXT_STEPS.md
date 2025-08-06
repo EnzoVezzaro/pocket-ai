@@ -40,15 +40,34 @@
 
   2. Build the executable:
 
-     * On Linux/macOS:
+     There are two primary ways to build `llama.cpp`: `make` and `CMake`.
 
+     * **Option A: Using `make` (Simple)**
+
+       On Linux/macOS, this is the quickest way:
        ```bash
        make
        ```
+       The executables (`main`, `server`, etc.) will appear in the root of the `llama.cpp` folder.
 
-     * On Windows (using MSYS2 or Visual Studio):
+     * **Option B: Using `CMake` (Recommended & Cross-Platform)**
 
-       Follow instructions on the official repo:
+       This method is more robust and provides more customization options.
+
+       ```bash
+       # 1. Create a build directory and configure the project
+       #    (You mentioned you've already done this step)
+       cmake -B build
+
+       # 2. Compile the code
+       #    This is your next step.
+       cmake --build build --config Release
+       ```
+       The executables will be located in the `build/bin` directory.
+
+     * **On Windows (Legacy):**
+
+       For older setups using MSYS2 or Visual Studio, you can follow the detailed instructions on the official repo:
        [https://github.com/ggerganov/llama.cpp#build-and-run](https://github.com/ggerganov/llama.cpp#build-and-run)
 
   3. Copy the compiled binary and required files into the `/llama.cpp` folder on the USB.

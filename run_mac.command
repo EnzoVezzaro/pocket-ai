@@ -1,2 +1,2 @@
 #!/bin/bash
-cd server && npm install && npm run start
+cd server && pnpm install && pnpm run start
