@@ -1,5 +1,7 @@
 # 💽 PocketAI: Plug-and-Play Offline AI Assistant on a USB Stick
 
+🚧 **Work in Progress**
+
 ## Overview
 PocketAI is a fully offline AI assistant that runs directly from a USB stick. It uses an open-source language model and provides a simple interface for interacting with an intelligent assistant, completely disconnected from the internet.
 
